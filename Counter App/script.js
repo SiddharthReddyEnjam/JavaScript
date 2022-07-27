@@ -6,11 +6,11 @@ const input = document.getElementById("input");
 const valueDown = () => {
   let n = parseInt(input.value);
   if (n > 0 || n <= -1) input.value = n--;
-  if (n <= 0 && n > -1) {
-    if (confirm("want negative value?")) {
-      input.value = n--;
-    }
-  }
+  // if (n <= 0 && n > -1) {
+  //   if (confirm("want negative value?")) {
+  //     input.value = n--;
+  //   }
+  // }
 };
 
 const valueUp = () => {
