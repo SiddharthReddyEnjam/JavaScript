@@ -17,9 +17,10 @@ const valueUp = () => {
   let n = parseInt(input.value);
   input.value = n + 1;
 };
-
 buttondown.addEventListener("click", valueDown);
 buttonup.addEventListener("click", valueUp);
+
+//ADDING SPAN
 
 buttondown.addEventListener("click", valueD);
 buttonup.addEventListener("click", valueU);
