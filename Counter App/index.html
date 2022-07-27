@@ -17,17 +17,25 @@
   </head>
   <body>
     <div class="container">
-      <a class="button" href="#"
+      <a id="button-down" class="button" href="#"
         ><ion-icon class="down" name="arrow-down-outline"></ion-icon
       ></a>
 
       <form>
-        <input readonly="readonly" type="number" value="13" />
+        <input
+          id="input"
+          readonly="readonly"
+          type="number"
+          value="13"
+          minlength="1"
+        />
       </form>
 
-      <a class="button" href="#"
+      <a id="button-up" class="button" href="#"
         ><ion-icon class="up" name="arrow-up-outline"></ion-icon
       ></a>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -37,15 +37,17 @@ input {
   box-shadow: 4px 4px 10px #000;
   padding: 3rem;
   border: none;
-  background-image: linear-gradient(to bottom right, orange, #ddd);
+  background-image: linear-gradient(to bottom right, rgb(255, 183, 0), #fff);
   border-radius: 30px;
   text-align: center;
-  font-size: 5rem;
+  font-size: 10rem;
   width: 20rem;
   height: 20rem;
   display: block;
   /* border-width: 0px; */
   outline: none;
+  color: rgb(231, 65, 65);
+  font-family: "Times New Roman", Times, serif;
 }
 
 input::-webkit-outer-spin-button,
