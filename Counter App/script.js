@@ -20,3 +20,17 @@ const valueUp = () => {
 
 buttondown.addEventListener("click", valueDown);
 buttonup.addEventListener("click", valueUp);
+
+buttondown.addEventListener("click", valueD);
+buttonup.addEventListener("click", valueU);
+
+function valueD() {
+  const span = document.getElementById("up_down");
+  let n = parseInt(span.textContent);
+  span.textContent = n - 1;
+}
+function valueU() {
+  const span = document.getElementById("up_down");
+  let n = parseInt(span.textContent);
+  span.textContent = n + 1;
+}
