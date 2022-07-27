@@ -4,8 +4,13 @@ const buttonup = document.getElementById("button-up");
 const input = document.getElementById("input");
 
 const valueDown = () => {
-  let n = input.value;
-  if (n > 1) input.value = n - 1;
+  let n = parseInt(input.value);
+  if (n > 0 || n <= -1) input.value = n - 1;
+  if (n <= 0 && n > -1) {
+    if (confirm("want negative value?")) {
+      input.value = n - 1;
+    }
+  }
 };
 
 const valueUp = () => {
