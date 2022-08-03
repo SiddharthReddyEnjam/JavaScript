@@ -28,5 +28,3 @@ rainbowcolor.addEventListener("click", () => {
   colors.style.display = "none";
   rainbow.style.display = "block";
 });
-
-rainbow.addEventListener("click", () => {});

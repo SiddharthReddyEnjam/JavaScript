@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="calculator">
+        <div class="content-space">
+          <span class="mode">DEG</span>
+          <!-- <input id="input" type="number" /> -->
+          <input
+            id="input"
+            type="text"
+            name="count"
+            placeholder="0"
+            onkeypress="return /[0-9*%+-]/i.test(event.key)"
+            autofocus
+          />
+          <span id="result">=0</span>
+
+          <!-- <span contenteditable="true" id="input" aria-live="polite">0</span> -->
+        </div>
+        <div class="container">
+          <div class="numbers">
+            <span class="number giving seven">7</span>
+            <span class="number giving eight">8</span>
+            <span class="number giving nine">9</span>
+            <span class="number giving four">4</span>
+            <span class="number giving five">5</span>
+            <span class="number giving six">6</span>
+            <span class="number giving one">1</span>
+            <span class="number giving two">2</span>
+            <span class="number giving three">3</span>
+            <span class="number giving dot">.</span>
+            <span class="number giving zero">0</span>
+            <span class="number giving equal">=</span>
+          </div>
+          <div class="operations">
+            <span class="giving operation del">DEL</span>
+            <span class="giving operation div">&#xf7;</span>
+            <span class="giving operation mul">x</span>
+            <span class="giving operation sub">-</span>
+            <span class="giving operation add">+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
